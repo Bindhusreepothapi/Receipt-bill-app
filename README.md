@@ -1,6 +1,4 @@
-git add README.md
-git commit -m "Add README.md"
-git push
+
 # 🧾 Receipt OCR App
 
 An AI-powered web application that extracts **Vendor Name**, **Total Amount**, and **Date** from uploaded **receipt images or PDFs** using OCR (Optical Character Recognition).  
