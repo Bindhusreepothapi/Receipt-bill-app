@@ -24,7 +24,7 @@ Built with **FastAPI** (backend), **Streamlit** (frontend), and **Tesseract OCR*
 
 ## 🖼️ Demo
 
-![Screenshot](https://via.placeholder.com/700x350?text=Upload+a+receipt+to+see+the+extracted+data)
+![Screenshot](screenshot.png)
 
 ---
 
