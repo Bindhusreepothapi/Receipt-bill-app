@@ -18,12 +18,22 @@ A simple web application that extracts text from receipt images using **FastAPI*
 ## 📂 Project Structure
 
 ReceiptBillApp/
-├── backend/
-│ ├── main.py # FastAPI backend
-│ ├── utils.py # OCR processing logic
-├── frontend/
-│ └── app.py # Streamlit frontend
-├── sample_receipts/ # Sample images for testing
+├── backend/            # FastAPI backend + OCR logic + DB
+│   ├── db.py
+│   ├── main.py
+│   ├── models.py
+│   ├── ocr_parser.py
+│   ├── utils.py
+│   └── receipts.db
+│
+├── dashboard/          # Streamlit dashboard
+│   └── dashboard_app.py
+│
+├── uploaded_receipts/  # Uploaded image storage
+├── samples/            # Sample receipts
+├── frontend/           # Optional streamlit UI (if applicable)
+│   └── app.py
+│
 ├── requirements.txt
 ├── README.md
 └── .gitignore
