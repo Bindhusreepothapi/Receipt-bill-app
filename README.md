@@ -26,8 +26,7 @@ This is a full-stack Python project that uses OCR to extract receipt details, st
 ---
 
 ## 📂 Project Structure
-
-'''ReceiptBillApp/
+ReceiptBillApp/
 ├── backend/            # FastAPI backend + OCR logic + DB
 │   ├── db.py
 │   ├── main.py
@@ -46,7 +45,7 @@ This is a full-stack Python project that uses OCR to extract receipt details, st
 │
 ├── requirements.txt
 ├── README.md
-└── .gitignore'''
+└── .gitignore
 
 ⚙️ Installation
 1. Clone the Repository
