@@ -1,6 +1,16 @@
 # 🧾 Receipt OCR App
 
-A simple web application that extracts text from receipt images using **FastAPI** for the backend and **Streamlit** for the frontend. The OCR functionality is powered by **Tesseract** and **OpenCV**.
+# 🧾 Receipt OCR Application
+
+This is a full-stack Python project that uses OCR to extract receipt details, stores them in a SQLite database, and visualizes them on a Streamlit dashboard.
+
+## 🔧 Tech Stack
+
+- **Backend**: FastAPI
+- **OCR**: Tesseract via pytesseract
+- **Database**: SQLite + SQLAlchemy
+- **Frontend**: Streamlit
+- **Language**: Python 3
 
 ---
 
@@ -17,7 +27,7 @@ A simple web application that extracts text from receipt images using **FastAPI*
 
 ## 📂 Project Structure
 
-ReceiptBillApp/
+'''ReceiptBillApp/
 ├── backend/            # FastAPI backend + OCR logic + DB
 │   ├── db.py
 │   ├── main.py
@@ -36,7 +46,7 @@ ReceiptBillApp/
 │
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+└── .gitignore'''
 
 ⚙️ Installation
 1. Clone the Repository
@@ -80,10 +90,6 @@ This will open the frontend in your browser.
 🖼️ Sample Output
 Upload receipt →
 ![App Screenshot](C:\Users\Bindu Sree\Desktop\ReceiptBillApp\screenshot.png)
-
-Extracted text is shown on the right panel
-
-Download as .txt button available
 
 🧠 How it Works
 Uses pytesseract to extract text from the uploaded image
