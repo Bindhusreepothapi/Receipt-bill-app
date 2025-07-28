@@ -11,13 +11,14 @@ This is a full-stack Python project that uses OCR to extract receipt details, st
 ---
 
 ## 🔧 Tech Stack
--**Frontene_old:** streamlit
+
 - **Frontend:** React, HTML, CSS
 - **Backend:** FastAPI, Uvicorn, Python
 - **OCR Engine:** Pytesseract (Tesseract OCR)
 - **Database:** SQLite + SQLAlchemy
 - **Dashboard:** Streamlit
 - **Deployment:** Netlify (Frontend), Render(Backend)
+- **Frontene_old:** streamlit
 
 ---
 
