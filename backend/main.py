@@ -18,6 +18,10 @@ app.add_middleware(
 )
 models.Base.metadata.create_all(bind=db.engine)
 
+@app.get("/")
+def root():
+    return {"message": "Hello from FastAPI on Render!"}
+
 @app.get("/", response_class=HTMLResponse)
 async def root():
     return "<h2>✅ Receipt OCR API is Running</h2><p>Go to <a href='/docs'>/docs</a> to explore.</p>"
