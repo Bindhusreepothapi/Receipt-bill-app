@@ -24,26 +24,7 @@ This is a full-stack Python project that uses OCR to extract receipt details, st
 ---
 
 ## 📂 Project Structure
-ReceiptBillApp/
-├── backend/            # FastAPI backend + OCR logic + DB
-│   ├── db.py
-│   ├── main.py
-│   ├── models.py
-│   ├── ocr_parser.py
-│   ├── utils.py
-│   └── receipts.db
-│
-├── dashboard/          # Streamlit dashboard
-│   └── dashboard_app.py
-│
-├── uploaded_receipts/  # Uploaded image storage
-├── samples/            # Sample receipts
-├── frontend/           # Optional streamlit UI (if applicable)
-│   └── app.py
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+<pre> ``` ReceiptBillApp │ README.md │ requirements.txt │ .gitignore │ ├───backend │ │ db.py │ │ main.py │ │ models.py │ │ ocr_parser.py │ │ utils.py │ │ receipts.db │ ├───dashboard │ │ dashboard_app.py │ ├───uploaded_receipts │ │ (uploaded image files) │ ├───samples │ │ (sample receipts) │ ├───frontend │ │ app.py ``` </pre>
 
 ⚙️ Installation
 1. Clone the Repository
