@@ -2,25 +2,35 @@
 
 This is a full-stack Python project that uses OCR to extract receipt details, stores them in a SQLite database, and visualizes them on a Streamlit dashboard.
 
-## 🔧 Tech Stack
+## 🔗 Live Demo
 
-- **Backend**: FastAPI
-- **OCR**: Tesseract via pytesseract
-- **Database**: SQLite + SQLAlchemy
-- **Frontend**: Streamlit
-- **Language**: Python 3
+- **Frontend (Netlify):** [https://app.netlify.com/projects/friendly-bunny-f0c0f7/overview--frontend](https://app.netlify.com/projects/friendly-bunny-f0c0f7/overview--frontend)
+- **Backend (Render):** [ http://127.0.0.1:8000/docs]( http://127.0.0.1:8000/docs)
+- **GitHub Repo:** [Receipt Bill App](https://github.com/bindhusreepothapi/Receipt-bill-app)
 
 ---
 
-## 📌 Features
+## 🔧 Tech Stack
 
-- Upload receipt images (JPG/PNG)
-- Automatically extract text using OCR (pytesseract)
-- Display and download the extracted text
-- Backend built with FastAPI
-- Frontend built with Streamlit
-- Lightweight, easy to run locally
+- **Frontend:** React, HTML, CSS
+- **Backend:** FastAPI, Uvicorn, Python
+- **OCR Engine:** Pytesseract (Tesseract OCR)
+- **Database:** SQLite + SQLAlchemy
+- **Dashboard:** Streamlit
+- **Deployment:** Netlify (Frontend), Render(Backend)
 
+---
+
+## 🚀 Features
+
+- Upload image of printed receipts
+- Extracts text using Tesseract OCR
+- Parses date, total, items, vendor etc.
+- Stores parsed data in SQLite
+- RESTful API using FastAPI
+- React frontend for uploading images
+- Interactive dashboard with Streamlit
+- Deployment on Netlify and Render
 ---
 
 
@@ -28,22 +38,35 @@ This is a full-stack Python project that uses OCR to extract receipt details, st
 
 ```
 ReceiptBillApp/
-├── backend/                # FastAPI backend + OCR logic + DB
-│   ├── db.py
-│   ├── main.py
-│   ├── models.py
-│   ├── ocr_parser.py
-│   ├── utils.py
-│   └── receipts.db
-├── dashboard/             # Streamlit dashboard
-│   └── dashboard_app.py
-├── uploaded_receipts/     # Uploaded receipt image storage
-├── samples/               # Sample receipt images
-├── frontend/              # Optional Streamlit UI (if applicable)
-│   └── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+│
+├── backend/                         # FastAPI backend
+│   ├── __init__.py
+│   ├── db.py                        # Database setup (SQLite + SQLAlchemy)
+│   ├── main.py                      # FastAPI app & routes
+│   ├── models.py                    # Receipt ORM model
+│   ├── ocr_parser.py                # OCR and receipt parsing logic
+│   ├── utils.py                     # Utility functions
+│
+├── dashboard/                       # Streamlit dashboard
+│   └── dashboard_app.py             # Streamlit app for data visualization
+│
+├── frontend/                        # React frontend
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── App.js                   # Upload form component
+│   │   ├── index.js                 # Entry point
+│   │   └── styles.css               # Optional: styles if any
+│   ├── package.json                 # React project config
+│   └── .env                         # (optional) for proxy or backend URL
+│
+├── receipts.db                      # SQLite database (auto-created)
+├── requirements.txt                 # Python dependencies
+├── README.md                        # Project documentation
+├── project-structure.txt            # Text version of this tree
+├── .gitignore
+└── LICENSE                          # (Optional) MIT License or similar
+
 ```
 
 
@@ -80,13 +103,20 @@ By default, backend will be running at:
 👉 http://127.0.0.1:8000
 👉 Swagger UI: http://127.0.0.1:8000/docs
 
-▶️ Start Streamlit Frontend (New Terminal)
+▶️ Frontend Setup
 
 cd frontend
-streamlit run app.py
+npm install
+npm start
 This will open the frontend in your browser.
 
+▶️ Streamlit Dashboard
+
+cd ../dashboard
+streamlit run dashboard_app.py
+
 🖼️ Sample Output
+
 Upload receipt →
 ![App Screenshot](C:\Users\Bindu Sree\Desktop\ReceiptBillApp\screenshot.png)
 
