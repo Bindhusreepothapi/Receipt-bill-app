@@ -5,7 +5,8 @@ This is a full-stack Python project that uses OCR to extract receipt details, st
 ## 🔗 Live Demo
 
 - **Frontend (Netlify):** [https://app.netlify.com/projects/friendly-bunny-f0c0f7/overview--frontend](https://app.netlify.com/projects/friendly-bunny-f0c0f7/overview--frontend)
-- **Backend (Render):** [ http://127.0.0.1:8000/docs]( http://127.0.0.1:8000/docs)
+- **Backend(Render):**[https://dashboard.render.com/web/srv-d1vqh015pdvs73ecm0ag/deploys/dep-d23p4ridbo4c7384cvq0](https://dashboard.render.com/web/srv-d1vqh015pdvs73ecm0ag/deploys/dep-d23p4ridbo4c7384cvq0)
+- **Backend (docs):** [ http://127.0.0.1:8000/docs]( http://127.0.0.1:8000/docs)
 - **GitHub Repo:** [Receipt Bill App](https://github.com/bindhusreepothapi/Receipt-bill-app)
 
 ---
