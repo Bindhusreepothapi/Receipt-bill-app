@@ -52,6 +52,7 @@ ReceiptBillApp/
 ├── dashboard/                       # Streamlit dashboard
 │   └── dashboard_app.py             # Streamlit app for data visualization
 │
+├──render.yaml
 ├── frontend/                        # React frontend
 │   ├── public/
 │   │   └── index.html
