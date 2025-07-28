@@ -1,1 +1,2 @@
-Parameter format not correct - /f/a
+Parameter format not correct - /F/A
+<pre>```ReceiptBillApp/ ├── backend/ # FastAPI backend + OCR logic + DB │ ├── db.py │ ├── main.py │ ├── models.py │ ├── ocr_parser.py │ ├── utils.py │ └── receipts.db │ ├── dashboard/ # Streamlit dashboard │ └── dashboard_app.py │ ├── uploaded_receipts/ # Uploaded image storage ├── samples/ # Sample receipts ├── frontend/ # Optional streamlit UI (if applicable) │ └── app.py │ ├── requirements.txt ├── README.md └── .gitignore```</pre>

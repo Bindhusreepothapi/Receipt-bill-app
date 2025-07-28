@@ -1,5 +1,3 @@
-# 🧾 Receipt OCR App
-
 # 🧾 Receipt OCR Application
 
 This is a full-stack Python project that uses OCR to extract receipt details, stores them in a SQLite database, and visualizes them on a Streamlit dashboard.
